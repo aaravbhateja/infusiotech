@@ -15,27 +15,27 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styling */
+/* Default Header Styles (applies to all screen sizes) */
 header {
     background-color: #333; /* Black background */
     color: white;
-    padding: 40px 0; /* Increased padding to make the header taller */
+    padding: 40px 0; /* Increased padding for taller header */
     position: relative;
-    text-align: center; /* Centers the text (optional) */
+    text-align: center; /* Optional: to center the content */
 }
 
-/* Navigation Styling */
+/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Centering navigation links */
-    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Center navigation links */
+    align-items: center; /* Vertically align items */
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    margin: 0 30px; /* Increased spacing between items */
+    margin: 0 30px; /* Space between navigation links */
 }
 
 nav ul li a {
@@ -43,21 +43,21 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.4rem; /* Increased font size */
-    padding: 8px 15px; /* Added padding around the links */
+    padding: 10px; /* Padding around links */
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007BFF; /* Change color on hover */
+    color: #007BFF; /* Hover color */
 }
 
-/* Social Media Icons Styling */
+/* Social Media Icons */
 .social-icons {
     position: absolute;
-    top: 20px; /* Adjusted for better positioning */
-    right: 20px; /* Positioning icons to the right */
+    top: 20px; /* Adjust position for proper alignment */
+    right: 20px;
     display: flex;
-    gap: 30px; /* Increased space between icons */
+    gap: 30px; /* Space between icons */
 }
 
 .social-icons a {
@@ -69,20 +69,25 @@ nav ul li a:hover {
 
 .social-icons a:hover {
     color: #007BFF; /* Change color on hover */
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-/* Icon Appearance - Adding circle background */
-.social-icons a {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 50%; /* Circular icons */
-    padding: 12px; /* Increased padding around the icons */
+/* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 50px 0; /* Even taller header for mobile */
+    }
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 20px; /* Add space between items */
+    }
+    .social-icons {
+        top: auto;
+        bottom: 20px; /* Move icons to the bottom */
+        right: 50%;
+        transform: translateX(50%); /* Center icons */
+    }
 }
-
-.social-icons a:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
-}
-
 
 .hero {
     background-color: #f4f4f4;
