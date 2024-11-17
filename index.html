@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="InfusioTech Pvt Ltd - Web Development and IT Solutions for Businesses">
-    <meta name="keywords" content="Web Development, IT Solutions, Responsive Websites, Web Design, Web Development Company">
+    <meta name="keywords" content="Web Development, IT Solutions, Responsive Websites, Web Design, IT Company">
     <meta name="author" content="InfusioTech Pvt Ltd">
-    <meta property="og:title" content="InfusioTech Pvt Ltd - Your Web Development Partner">
-    <meta property="og:description" content="InfusioTech Pvt Ltd offers customized web development solutions for businesses.">
+    <meta property="og:title" content="InfusioTech Pvt Ltd - Web Development Company">
+    <meta property="og:description" content="InfusioTech Pvt Ltd offers custom web development solutions for businesses.">
     <meta property="og:image" content="your-logo-url.jpg">
     <title>InfusioTech Pvt Ltd | Web Development Company</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -20,11 +22,20 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/infusiotech" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/infusiotech/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -33,7 +44,7 @@
         <div class="hero-text">
             <h1>Welcome to InfusioTech Pvt Ltd</h1>
             <p>Your trusted partner in web development and IT solutions.</p>
-            <a href="#contact" class="cta-btn">Get in Touch</a>
+            <a href="contact.html" class="cta-btn">Get in Touch</a>
         </div>
     </section>
 
@@ -52,28 +63,6 @@
                 <h3>SEO Optimization</h3>
                 <p>We help improve your online visibility with SEO strategies to drive traffic to your site.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>InfusioTech Pvt Ltd is a web development company dedicated to providing innovative digital solutions for businesses of all sizes. We help brands build robust and scalable websites that drive results.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form" action="submit-form.php" method="POST">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="cta-btn">Send Message</button>
-            </form>
         </div>
     </section>
 
