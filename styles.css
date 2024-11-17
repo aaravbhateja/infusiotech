@@ -42,20 +42,34 @@ nav ul li a {
 .social-icons {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
     display: flex;
-    gap: 15px;
+    gap: 20px; /* Space between icons */
 }
 
 .social-icons a {
-    color: white;
-    font-size: 1.5rem;
+    color: #fff; /* White color */
+    font-size: 1.8rem; /* Larger icon size */
     text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition on hover */
 }
 
 .social-icons a:hover {
-    color: #007BFF;
+    color: #007BFF; /* Color on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
+
+/* Add shadow for better contrast */
+.social-icons a {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 50%; /* Make the icons circular */
+    padding: 10px; /* Space around icons */
+}
+
+.social-icons a:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
 
 .hero {
     background-color: #f4f4f4;
