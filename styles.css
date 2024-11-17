@@ -90,10 +90,10 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('images/hero-background.jpg'); /* Path to your background image */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
+    background-image: url('images/hero-background.jpg'); /* Path to your image */
+    background-size: cover; /* Default for desktop and larger screens */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
     height: 100vh; /* Full viewport height */
     display: flex; /* Flexbox for centering content */
     justify-content: center; /* Centers content horizontally */
@@ -103,7 +103,7 @@ nav ul li a:hover {
     position: relative; /* Enables overlay or absolute positioning */
 }
 
-/* Optional: Add a dark overlay for better text readability */
+/* Optional: Add a dark overlay for better text visibility */
 .hero::before {
     content: '';
     position: absolute;
@@ -112,43 +112,34 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: 1; /* Ensures overlay is behind text */
+    z-index: 1; /* Ensures overlay is behind content */
 }
 
 .hero-content {
-    position: relative; /* Keeps the content above the overlay */
+    position: relative; /* Keeps content above the overlay */
     z-index: 2; /* Ensures content is on top */
-    padding: 20px; /* Padding for better spacing */
+    padding: 20px; /* Adds spacing */
 }
 
-/* Media Query for Small Screens */
+/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .hero {
-        height: 70vh; /* Reduce height for smaller devices */
-        background-size: contain; /* Adjust background scaling */
+        background-size: contain; /* Ensures the entire image is visible */
+        background-position: center; /* Center the image */
+        height: auto; /* Adjust height to fit the image */
+        min-height: 100vh; /* Ensure minimum height is 100vh */
+    }
+
+    .hero-content {
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .hero-content h1 {
-        font-size: 2rem; /* Adjust text size for smaller screens */
+        font-size: 1.8rem; /* Adjust text size for smaller screens */
     }
 
     .hero-content p {
-        font-size: 1rem; /* Adjust text size for smaller screens */
-    }
-}
-
-/* Media Query for Very Small Screens */
-@media (max-width: 480px) {
-    .hero {
-        height: 60vh; /* Further reduce height for very small devices */
-    }
-
-    .hero-content h1 {
-        font-size: 1.5rem; /* Further adjust text size */
-    }
-
-    .hero-content p {
-        font-size: 0.9rem; /* Further adjust text size */
+        font-size: 1rem; /* Adjust paragraph text size */
     }
 }
 
