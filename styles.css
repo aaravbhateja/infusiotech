@@ -17,61 +17,62 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #333;
+    background-color: #333; /* Black background */
     color: white;
-    padding: 20px 0; /* Increased padding to make the header taller */
+    padding: 40px 0; /* Increased padding to make the header taller */
     position: relative;
-    text-align: center; /* Optional: to center the content */
+    text-align: center; /* Centers the text (optional) */
 }
 
+/* Navigation Styling */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centering navigation links */
+    align-items: center; /* Vertically center the items */
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    margin: 0 25px; /* Increased space between the menu items */
+    margin: 0 30px; /* Increased spacing between items */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem; /* Increased font size for better visibility */
-    padding: 10px; /* Adds some space around the text */
+    font-size: 1.4rem; /* Increased font size */
+    padding: 8px 15px; /* Added padding around the links */
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #007BFF; /* Change color on hover */
 }
 
-/* Social Media Icons */
+/* Social Media Icons Styling */
 .social-icons {
     position: absolute;
-    top: 15px; /* Adjusted the position */
-    right: 20px;
+    top: 20px; /* Adjusted for better positioning */
+    right: 20px; /* Positioning icons to the right */
     display: flex;
-    gap: 25px; /* Increased space between icons */
+    gap: 30px; /* Increased space between icons */
 }
 
 .social-icons a {
-    color: #fff; /* White color */
+    color: white;
     font-size: 2rem; /* Increased icon size */
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #007BFF; /* Hover color */
+    color: #007BFF; /* Change color on hover */
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
-/* Add shadow and rounded icons */
+/* Icon Appearance - Adding circle background */
 .social-icons a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-radius: 50%; /* Circular icons */
